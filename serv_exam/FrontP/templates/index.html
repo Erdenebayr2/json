@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Бүртгүүлэх хэсэг</h1>
+    <form method="post">
+        {%csrf_token%}
+        <label for="username">Хэрэглэгчийн нэр:</label><br><br>
+        <input type="text" name="username"/><br><br>
+        <label for="username">Хэрэглэгчийн нууц үг:</label><br><br>
+        <input type="password" name="password"/><br><br>
+        <label for="username">Хэрэглэгчийн нас:</label><br><br>
+        <input type="number" name="age"/><br><br>
+        <label for="username">Хэрэглэгчийн цахим хаяг:</label><br><br>
+        <input type="email" name="email"/><br><br>
+        {% if messages %}
+        {% for message in messages %}
+        {{message}}
+        {% endfor %}
+        {% endif %}
+        <br><br>
+        <input type="submit" name="submit" value="Бүртгүүлэх">
+    </form><br>
+    <a href="{% url 'log_in' %}">Бүртгэлтэй хаягаар нэвтрэх</a>
+</body>
+</html>
