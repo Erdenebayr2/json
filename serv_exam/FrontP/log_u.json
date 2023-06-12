@@ -16,5 +16,29 @@
         "password": "bogdbank23",
         "age": "20",
         "email": "academy4@bogdbank.com"
+    },
+    "u_id4": {
+        "name": "student",
+        "password": "student1",
+        "age": "87",
+        "email": "erdenebayr.eba333@gmail.com"
+    },
+    "u_id5": {
+        "name": "student3",
+        "password": "student3",
+        "age": "13",
+        "email": "byambaaerhemee4@gmail.com"
+    },
+    "u_id6": {
+        "name": "student2",
+        "password": "student2",
+        "age": "12",
+        "email": "student6@gmail.com"
+    },
+    "u_id7": {
+        "name": "student4",
+        "password": "student4",
+        "age": "14",
+        "email": "student4@gmail.com"
     }
 }
