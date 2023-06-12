@@ -69,3 +69,6 @@ def log_out(request):
     del request.session.get['uname']
     logout(request)
     return redirect('log_in')
+
+def handler40(request, exception):
+    return render(request, '404.html', status=404)

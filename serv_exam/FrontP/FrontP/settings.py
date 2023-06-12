@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 
 
 MIDDLEWARE = [
+    'FrontP.handlers.custom_handler404',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
